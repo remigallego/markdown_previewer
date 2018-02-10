@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 8020 --history-api-fallback"
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 8010 --history-api-fallback"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,7 @@
     "marked": "^0.3.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native-fs": "^2.9.10",
+    "react-native-fs": "^2.9.10"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

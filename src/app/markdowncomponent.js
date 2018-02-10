@@ -24,19 +24,21 @@ class MarkdownComponent extends React.Component {
   }
 
   componentDidMount(){
-    this.setInnerHTML();
+    this.setInnerHTML(null);
     }
 
-    handleChange(event){
+  handleChange(event){
     this.setState({value: event.target.value});
-    this.setInnerHTML();
-    }
+    this.setInnerHTML(event.target.value);
+  }
 
-    setInnerHTML(){
+  setInnerHTML(e){
     let doc = document.getElementById('text-marked');
-    doc.innerHTML = marked(this.state.value);
+    let marked_str;
+    marked_str = (e === null ?  marked(String(this.state.value)) :  marked(String(e)));
+    doc.innerHTML = marked_str;
     return doc.innerHTML;
-    }
+  }
 }
 
 module.exports = MarkdownComponent;
