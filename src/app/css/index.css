@@ -1,0 +1,35 @@
+body{
+  background: #ecf7f9;
+  margin: 2%;
+  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
+  font-size: 80%;
+}
+
+#title{
+  text-align: center;
+}
+
+.container{
+  margin-top: 4%;
+}
+
+.col, .col-sm-6 {
+  margin-bottom: 1vh;
+
+}
+
+textarea{
+  display: inline-block;
+  position: absolute;
+  resize: none;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  height: 60vh;
+}
+
+#text-marked {
+  color: black;
+  word-wrap: break-word !important;
+  overflow: hidden;
+  padding-left: 3.5vw;
+}
